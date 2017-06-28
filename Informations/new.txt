@@ -1,0 +1,42 @@
+#include <stdio.h>
+
+int get_max(int num, int *max_f, int *max_s)
+{
+	if (num > *max_f || num > *max_s)
+	{
+		if (num > *max_f && num > *max_s)
+		{
+			if (*max_f > *max_s)
+				*max_s = num;
+			else
+				*max_f = num;
+		}
+		else
+		{	
+			if (*max_f > num)
+				*max_s = num;
+			else
+				*max_f = num;
+		}
+	}
+	return 0;
+}
+
+int main(void)
+{
+	int max_f, max_s;
+	int num;
+	
+	FILE *f;
+	
+	f = fopen("input.txt", "r");
+	if (!f)
+	{
+		fscanf("%d %d", &max_f, &max_s);
+		while (fscanf("%d", &num))
+		{
+			get_max(num, &max_f, &max_s);
+		}
+		printf("Max found: %d, %d", max_f, max_s);
+	}
+}

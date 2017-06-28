@@ -1,0 +1,1 @@
+Number elements bigger than average(min, max): 2

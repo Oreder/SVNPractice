@@ -1,0 +1,71 @@
+        -:    0:Source:zz.c
+        -:    0:Graph:zz.gcno
+        -:    0:Data:zz.gcda
+        -:    0:Runs:5
+        -:    0:Programs:1
+        -:    1:#include <stdio.h>
+        -:    2:
+        2:    3:int count(FILE *f)
+        -:    4:{
+        -:    5:	float num, min, max, avg;
+        2:    6:	int total = 0;
+        -:    7:	
+        2:    8:	rewind(f);
+        -:    9:	// set beginning value
+        2:   10:	fscanf(f, "%f", &min);
+        2:   11:	max = min;
+        -:   12:	
+        9:   13:    while (fscanf(f, "%f", &num) == 1)		// identify min and max
+        -:   14:	{
+        5:   15:		if (num > max)
+        2:   16:			max = num;
+        5:   17:		if (num < min)
+        1:   18:			min = num;	
+        -:   19:	}
+        -:   20:	
+        2:   21:	avg = (min + max)/2;	// average
+        2:   22:	rewind(f);
+        -:   23:	
+       11:   24:	while (fscanf(f, "%f", &num) == 1)
+        -:   25:	{
+        7:   26:		if (num >= avg)
+        4:   27:			total++;
+        -:   28:	}		// count number satisfied elements
+        -:   29:	
+        2:   30:	return total;
+        -:   31:}
+        -:   32:
+        -:   33:
+        5:   34:int main(int argc, char **argv)
+        -:   35:{
+        -:   36:    float num_1, num_2;
+        -:   37:    FILE *f, *g;
+        -:   38:
+        5:   39:    g = fopen("Out.txt", "w");
+        -:   40:
+        5:   41:    if (argc == 1)
+        -:   42:    {
+        1:   43:        fprintf(g, "No file name input!");
+        -:   44:    }
+        -:   45:    else
+        -:   46:    {
+        4:   47:        f = fopen(argv[1], "r");
+        -:   48:
+        4:   49:        if (!f)
+        1:   50:            fprintf(g, "File is not existed!");
+        -:   51:        else
+        -:   52:        {	
+        3:   53:            if (fscanf(f, "%f%f", &num_1, &num_2) < 2)
+        1:   54:                fprintf(g, "File does not contain enough numbers!");
+        -:   55:            else
+        -:   56:            {
+        2:   57:                fprintf(g, "Number elements bigger than average(min, max): %d", count(f));
+        -:   58:            }
+        3:   59:            fclose(f);
+        -:   60:        }
+        -:   61:    }
+        -:   62:
+        5:   63:    fclose(g);
+        5:   64:    return 0;
+        -:   65:}
+        -:   66:

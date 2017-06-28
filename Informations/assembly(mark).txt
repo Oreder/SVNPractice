@@ -1,0 +1,41 @@
+==========================================================
+command -g: {gcc -std=c99  -g -O -c test.c}  (ASSEMBLE)
+
+[Diff] 2,587 test.o  (BIG FILE)
+
+==========================================================
+C:\Practice\test>burger$ gcc -g -O -c test.c
+'burger$' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Practice\test>gcc -g -O -c test.c
+test.c: In function 'main':
+test.c:8:2: error: 'for' loop initial declarations are only allowed in C99 mode
+test.c:8:2: note: use option -std=c99 or -std=gnu99 to compile your code
+
+C:\Practice\test>gcc -std=c99  -g -O -c test.c
+
+C:\Practice\test>dir
+ Volume in drive C has no label.
+ Volume Serial Number is C4DE-497E
+
+ Directory of C:\Practice\test
+
+07/03/2015  01:53 PM    <DIR>          .
+07/03/2015  01:53 PM    <DIR>          ..
+07/01/2015  03:02 AM               161 test.c
+07/01/2015  03:02 AM            18,403 test.i
+07/03/2015  01:53 PM             2,587 test.o
+07/01/2015  03:02 AM             8,192 test.s
+               4 File(s)         29,343 bytes
+               2 Dir(s)  25,134,260,224 bytes free
+
+C:\Practice\test>notepad test.o
+
+C:\Practice\test>ld -o test.exe test.o
+test.o: In function `printf':
+c:/mingw/bin/../lib/gcc/mingw32/4.6.2/../../../../include/stdio.h:256: undefined
+ reference to `__mingw_vprintf'
+test.o: In function `main':
+C:\Practice\test/test.c:6: undefined reference to `__main'
+

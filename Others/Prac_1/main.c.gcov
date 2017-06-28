@@ -1,0 +1,87 @@
+        -:    0:Source:main.c
+        -:    0:Graph:main.gcno
+        -:    0:Data:main.gcda
+        -:    0:Runs:5
+        -:    0:Programs:1
+        -:    1:#include <stdio.h>
+        -:    2:
+        -:    3:// check file error
+        8:    4:int check_file(FILE *f)
+        -:    5:{
+        -:    6:    int num_1, num_2;
+        -:    7:
+        8:    8:    if (!f)
+        2:    9:        return -1;
+        -:   10:    else
+        -:   11:    {
+        6:   12:        if (fscanf(f, "%d %d", &num_1, &num_2) < 2)
+        4:   13:                return 1;
+        -:   14:        else
+        2:   15:            return 0;
+        -:   16:    }
+        -:   17:}
+        -:   18:
+        -:   19:
+        -:   20:// procedure choose 2 bigger numbers from file
+        5:   21:int get_max(FILE *f, FILE *g)
+        -:   22:{
+        -:   23:    int max_f, max_s;
+        -:   24:    int num;
+        -:   25:
+        5:   26:    if (check_file(f) == 0)
+        -:   27:    {
+        2:   28:        fscanf(f, "%d %d", &max_f, &max_s);
+        -:   29:
+        2:   30:        rewind(f);
+        -:   31:
+       19:   32:        while (fscanf(f, "%d", &num) == 1)
+        -:   33:        {
+       15:   34:            if (num > max_f || num > max_s)
+        -:   35:            {
+        7:   36:                if (num > max_f && num > max_s)
+        -:   37:                {
+        8:   38:                    if (max_f > max_s)
+        2:   39:                        max_s = num;
+        -:   40:                    else
+        2:   41:                        max_f = num;
+        -:   42:                }
+        -:   43:                else
+        -:   44:                {
+        3:   45:                    if (max_f > num)
+        2:   46:                        max_s = num;
+        -:   47:                    else
+        1:   48:                       max_f = num;
+        -:   49:                }
+        -:   50:            }
+        -:   51:        }
+        -:   52:
+        2:   53:        fprintf(g, "Max found: %d and %d\n", max_f, max_s);
+        2:   54:		fclose(f);
+        -:   55:    }
+        -:   56:    else
+        -:   57:    {
+        3:   58:        if (check_file(f) == -1)
+        1:   59:            fprintf(g, "File is not existed!");
+        -:   60:        else
+        -:   61:        {
+        2:   62:			fprintf(g, "File has not enough numbers!");
+        2:   63:			fclose(f);
+        -:   64:		}
+        -:   65:    }
+        5:   66:    return 0;
+        -:   67:}
+        -:   68:
+        5:   69:int main(void)
+        -:   70:{
+        -:   71:    FILE *f, *g;
+        -:   72:    
+        5:   73:	f = fopen("in.txt", "r");
+        5:   74:    g = fopen("out.txt", "w");
+        -:   75:
+        5:   76:    get_max(f, g);
+        -:   77:
+        5:   78:    fclose(g);
+        -:   79:
+        5:   80:    return 0;
+        -:   81:}
+        -:   82:

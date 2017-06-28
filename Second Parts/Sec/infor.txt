@@ -1,0 +1,30 @@
+C:\Sec>make -f makefile.mak
+MAKE Version 5.3  Copyright (c) 1987, 2008 CodeGear
+        gcc avg.o count.o main.o -o prac.exe
+
+C:\Sec>dir
+ Volume in drive C has no label.
+ Volume Serial Number is C4DE-497E
+
+ Directory of C:\Sec
+
+07/10/2015  03:15 PM    <DIR>          .
+07/10/2015  03:15 PM    <DIR>          ..
+07/10/2015  03:02 PM               329 avg.c
+07/10/2015  03:11 PM               850 avg.o
+07/10/2015  03:12 PM               346 count.c
+07/10/2015  03:12 PM               764 count.o
+07/10/2015  05:08 AM               728 main.c
+07/10/2015  03:12 PM             1,372 main.o
+07/10/2015  03:15 PM               310 makefile.mak
+07/10/2015  03:15 PM           138,632 prac.exe
+               8 File(s)        143,331 bytes
+               2 Dir(s)  25,292,423,168 bytes free
+
+C:\Sec>prac.exe
+
+C:\Sec>prac.exe 1.txt
+
+C:\Sec>prac.exe in.txt
+
+C:\Sec>prac.exe in.txt

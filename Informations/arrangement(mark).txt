@@ -1,0 +1,84 @@
+============================================================
+command -v: {c99 -v number.c -o number.exe}
+
+[Diff] 137,087 number.exe  (BIG FILE)
+
+============================================================
+C:\Practice\test_2>c99 -v number.c -o number.exe
+Using built-in specs.
+COLLECT_GCC=gcc
+COLLECT_LTO_WRAPPER=c:/mingw/bin/../libexec/gcc/mingw32/4.6.2/lto-wrapper.exe
+Target: mingw32
+Configured with: ../gcc-4.6.2/configure --enable-languages=c,c++,ada,fortran,obj
+c,obj-c++ --disable-sjlj-exceptions --with-dwarf2 --enable-shared --enable-libgo
+mp --disable-win32-registry --enable-libstdcxx-debug --enable-version-specific-r
+untime-libs --build=mingw32 --prefix=/mingw
+Thread model: win32
+gcc version 4.6.2 (GCC)
+COLLECT_GCC_OPTIONS='-std=c99' '-v' '-o' 'number.exe' '-mtune=i386' '-march=i386
+'
+ c:/mingw/bin/../libexec/gcc/mingw32/4.6.2/cc1.exe -quiet -v -iprefix c:\mingw\b
+in\../lib/gcc/mingw32/4.6.2/ number.c -quiet -dumpbase number.c -mtune=i386 -mar
+ch=i386 -auxbase number -std=c99 -version -o C:\DOCUME~1\Admin\LOCALS~1\Temp\ccQ
+0BRk9.s
+GNU C (GCC) version 4.6.2 (mingw32)
+        compiled by GNU C version 4.6.2, GMP version 5.0.1, MPFR version 2.4.1,
+MPC version 0.8.1
+GGC heuristics: --param ggc-min-expand=99 --param ggc-min-heapsize=131006
+ignoring nonexistent directory "c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../.
+./mingw32/include"
+ignoring duplicate directory "c:/mingw/lib/gcc/../../lib/gcc/mingw32/4.6.2/inclu
+de"
+ignoring duplicate directory "/mingw/lib/gcc/mingw32/4.6.2/../../../../include"
+ignoring duplicate directory "c:/mingw/lib/gcc/../../include"
+ignoring duplicate directory "c:/mingw/lib/gcc/../../lib/gcc/mingw32/4.6.2/inclu
+de-fixed"
+ignoring nonexistent directory "c:/mingw/lib/gcc/../../lib/gcc/mingw32/4.6.2/../
+../../../mingw32/include"
+ignoring duplicate directory "/mingw/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include
+ c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include-fixed
+End of search list.
+GNU C (GCC) version 4.6.2 (mingw32)
+        compiled by GNU C version 4.6.2, GMP version 5.0.1, MPFR version 2.4.1,
+MPC version 0.8.1
+GGC heuristics: --param ggc-min-expand=99 --param ggc-min-heapsize=131006
+Compiler executable checksum: c20aed7c018482d7b62efcd5dcab2a9d
+COLLECT_GCC_OPTIONS='-std=c99' '-v' '-o' 'number.exe' '-mtune=i386' '-march=i386
+'
+ c:/mingw/bin/../lib/gcc/mingw32/4.6.2/../../../../mingw32/bin/as.exe -o C:\DOCU
+ME~1\Admin\LOCALS~1\Temp\cc3n82td.o C:\DOCUME~1\Admin\LOCALS~1\Temp\ccQ0BRk9.s
+COMPILER_PATH=c:/mingw/bin/../libexec/gcc/mingw32/4.6.2/;c:/mingw/bin/../libexec
+/gcc/;c:/mingw/bin/../lib/gcc/mingw32/4.6.2/../../../../mingw32/bin/
+LIBRARY_PATH=c:/mingw/bin/../lib/gcc/mingw32/4.6.2/;c:/mingw/bin/../lib/gcc/;c:/
+mingw/bin/../lib/gcc/mingw32/4.6.2/../../../../mingw32/lib/;c:/mingw/bin/../lib/
+gcc/mingw32/4.6.2/../../../;/mingw/lib/
+COLLECT_GCC_OPTIONS='-std=c99' '-v' '-o' 'number.exe' '-mtune=i386' '-march=i386
+'
+ c:/mingw/bin/../libexec/gcc/mingw32/4.6.2/collect2.exe -Bdynamic -o number.exe
+c:/mingw/bin/../lib/gcc/mingw32/4.6.2/../../../crt2.o c:/mingw/bin/../lib/gcc/mi
+ngw32/4.6.2/crtbegin.o -Lc:/mingw/bin/../lib/gcc/mingw32/4.6.2 -Lc:/mingw/bin/..
+/lib/gcc -Lc:/mingw/bin/../lib/gcc/mingw32/4.6.2/../../../../mingw32/lib -Lc:/mi
+ngw/bin/../lib/gcc/mingw32/4.6.2/../../.. -L/mingw/lib C:\DOCUME~1\Admin\LOCALS~
+1\Temp\cc3n82td.o -lmingw32 -lgcc_eh -lgcc -lmoldname -lmingwex -lmsvcrt -ladvap
+i32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_eh -lgcc -lmoldname -lmingwex
+-lmsvcrt c:/mingw/bin/../lib/gcc/mingw32/4.6.2/crtend.o
+
+C:\Practice\test_2>dir
+ Volume in drive C has no label.
+ Volume Serial Number is C4DE-497E
+
+ Directory of C:\Practice\test_2
+
+07/05/2015  02:49 AM    <DIR>          .
+07/05/2015  02:49 AM    <DIR>          ..
+07/05/2015  02:41 AM               424 number.c
+07/05/2015  02:49 AM           137,087 number.exe
+07/05/2015  02:42 AM            18,582 number.i
+07/05/2015  02:43 AM             1,986 number.o
+07/05/2015  02:43 AM             5,482 number.s
+               5 File(s)        163,561 bytes
+               2 Dir(s)  25,551,486,976 bytes free

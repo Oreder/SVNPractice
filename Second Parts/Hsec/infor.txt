@@ -1,0 +1,58 @@
+C:\>cd HSec
+
+C:\Hsec>dir
+ Volume in drive C has no label.
+ Volume Serial Number is C4DE-497E
+
+ Directory of C:\Hsec
+
+07/10/2015  03:25 PM    <DIR>          .
+07/10/2015  03:25 PM    <DIR>          ..
+07/10/2015  03:02 PM               329 avg.c
+07/10/2015  03:24 PM                85 avg.h
+07/10/2015  03:20 PM               366 count.c
+07/10/2015  03:23 PM                91 count.h
+07/10/2015  03:21 PM               768 main.c
+07/10/2015  03:31 PM               406 makefile.mak
+               6 File(s)          2,045 bytes
+               2 Dir(s)  25,292,394,496 bytes free
+
+C:\Hsec>make -f makefile.mak
+MAKE Version 5.3  Copyright (c) 1987, 2008 CodeGear
+        c main.c
+'c' is not recognized as an internal or external command,
+operable program or batch file.
+        o prac.exe  main.o
+'o' is not recognized as an internal or external command,
+operable program or batch file.
+
+---------------------------------------------
+C:\Hsec>make -f makefile_1.mak
+MAKE Version 5.3  Copyright (c) 1987, 2008 CodeGear
+        gcc -std=c99 -Wall -Werror -pedantic -c avg.c
+        gcc -std=c99 -Wall -Werror -pedantic -c count.c
+        gcc -std=c99 -Wall -Werror -pedantic -c main.c
+        gcc avg.o count.o main.o -o prac.exe
+
+C:\Hsec>dir
+ Volume in drive C has no label.
+ Volume Serial Number is C4DE-497E
+
+ Directory of C:\Hsec
+
+07/10/2015  03:42 PM    <DIR>          .
+07/10/2015  03:42 PM    <DIR>          ..
+07/10/2015  03:02 PM               329 avg.c
+07/10/2015  03:24 PM                85 avg.h
+07/10/2015  03:42 PM               850 avg.o
+07/10/2015  03:20 PM               366 count.c
+07/10/2015  03:23 PM                91 count.h
+07/10/2015  03:42 PM               764 count.o
+07/10/2015  03:35 PM               912 infor.txt
+07/10/2015  03:21 PM               768 main.c
+07/10/2015  03:42 PM             1,372 main.o
+07/10/2015  03:31 PM               406 makefile.mak
+07/10/2015  03:42 PM               332 makefile_1.mak
+07/10/2015  03:42 PM           138,632 prac.exe
+              12 File(s)        144,907 bytes
+               2 Dir(s)  25,292,238,848 bytes free

@@ -1,0 +1,85 @@
+Login   : nguen_db_matocdo.bee.mhf
+Password: mepNq4
+
+YCFHQ9DWCYDKV88T2TMHG7BHP
+http://www.youtube.com/watch?v=-Ou7Jxtbafw
+http://ksec.info/threads/bai-tap-lap-trinh-c-lop-at10a-phan-2-for.84/
+
+[READ] http://vi.wikipedia.org/wiki/C%C3%BA_ph%C3%A1p_ng%C3%B4n_ng%E1%BB%AF_C
+
+se_15_d-nguen
+
+http://dev.iu7.bmstu.ru/trac/practice_b1_15_d-nguen/
+http://dev.iu7.bmstu.ru/trac/practice_b1_15_p-kandrina/
+http://dev.iu7.bmstu.ru/trac/practice_b1_15_m-stepanenko/
+http://dev.iu7.bmstu.ru/trac/practice_b1_15_n-kuznetsov/
+http://dev.iu7.bmstu.ru/trac/practice_b1_15_s-matkurbanov/
+
+http://dev.iu7.bmstu.ru/trac/practice_b1_14_i-poputnikov/
+http://dev.iu7.bmstu.ru/trac/practice_b1_14_v-turgenev/
+
+http://dev.iu7.bmstu.ru/trac/se_15_n-kuznetsov/
+http://dev.iu7.bmstu.ru/trac/se_15_s-matkurbanov/
+http://dev.iu7.bmstu.ru/trac/se_15_p-kandrina/
+http://dev.iu7.bmstu.ru/trac/se_15_m-stepanenko/
+
+https://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4_%D0%BF%D1%80%D0%BE%D1%81%D1%82%D0%BE%D0%B9_%D0%B8%D1%82%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%B8
+https://yadi.sk/d/_e3dFiPib9Bku
+
+[Physic] http://exir.ru/solutions/
+
+http://solvethecube.com/advanced
+
+http://www.youtube.com/watch?v=D9DYPLpE1wk
+http://www.youtube.com/watch?v=ePGSAJGPfXE
+http://www.youtube.com/watch?v=gHPn6stPR8Q&list=RDHIPP7JGuVy8&index=28
+
+---------------------
+[sNOTE]: COMMAND
+
+(!) svn export -r 15 http://dev.iu7.bmstu.ru/svn/se_15_i-opi/bisect/integral.lpr
+-> username
+-> password
+
+> dir
+> svn st 
+
+(!) svn cat -r 15 http://dev.iu7.bmstu.ru/svn/se_15_i-opi/bisect/integral.lpr
+-> username
+-> password
+
+> dir //show new of disk
+
+> fc integral.lpr test.txt
+Comparing files integral.lpr and test.txt
+FC: no differences encountered
+
+---
+> svn log -v > log.txt
+> notepad log.txt
+find last change of file
+
+---
+> svn diff -r 1:2 example\example.lpr
+> svn up -r 2 example.lpr
+
+---
+> svn st
+> svn diff
+> svn revert example.lpr  //unchange file 
+> svn up
+
+---
+> svn up -r 38
+-> username + password
+A	test_01.02
+A	test_01.02\test_01.lpi
+A	test_01.02\test_01.lpr
+Conflict ...
+
+
+---
+How to create .BAT file
+1) new text document --> change .txt = .bat
+2) write
+http://www.wikihow.com/Write-a-Batch-File

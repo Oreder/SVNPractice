@@ -1,0 +1,89 @@
+C:\Practice\test_1>dir
+ Volume in drive C has no label.
+ Volume Serial Number is C4DE-497E
+
+ Directory of C:\Practice\test_1
+
+07/05/2015  02:37 AM    <DIR>          .
+07/05/2015  02:37 AM    <DIR>          ..
+07/05/2015  02:41 AM               424 number.c
+               1 File(s)            424 bytes
+               2 Dir(s)  25,551,740,928 bytes free
+
+C:\Practice\test_1>cpp number.c > number.i
+
+C:\Practice\test_1>dir
+ Volume in drive C has no label.
+ Volume Serial Number is C4DE-497E
+
+ Directory of C:\Practice\test_1
+
+07/05/2015  02:42 AM    <DIR>          .
+07/05/2015  02:42 AM    <DIR>          ..
+07/05/2015  02:41 AM               424 number.c
+07/05/2015  02:42 AM            18,582 number.i
+               2 File(s)         19,006 bytes
+               2 Dir(s)  25,551,720,448 bytes free
+
+C:\Practice\test_1>c99 -S -masm=intel number.i -o number.s
+
+C:\Practice\test_1>dir
+ Volume in drive C has no label.
+ Volume Serial Number is C4DE-497E
+
+ Directory of C:\Practice\test_1
+
+07/05/2015  02:43 AM    <DIR>          .
+07/05/2015  02:43 AM    <DIR>          ..
+07/05/2015  02:41 AM               424 number.c
+07/05/2015  02:42 AM            18,582 number.i
+07/05/2015  02:43 AM             5,482 number.s
+               3 File(s)         24,488 bytes
+               2 Dir(s)  25,551,716,352 bytes free
+
+C:\Practice\test_1>as number.s -o number.o
+
+C:\Practice\test_1>dir
+ Volume in drive C has no label.
+ Volume Serial Number is C4DE-497E
+
+ Directory of C:\Practice\test_1
+
+07/05/2015  02:43 AM    <DIR>          .
+07/05/2015  02:43 AM    <DIR>          ..
+07/05/2015  02:41 AM               424 number.c
+07/05/2015  02:42 AM            18,582 number.i
+07/05/2015  02:43 AM             1,986 number.o
+07/05/2015  02:43 AM             5,482 number.s
+               4 File(s)         26,474 bytes
+               2 Dir(s)  25,551,712,256 bytes free
+
+C:\Practice\test_1>gcc number.o -o number.exe
+
+C:\Practice\test_1>dir
+ Volume in drive C has no label.
+ Volume Serial Number is C4DE-497E
+
+ Directory of C:\Practice\test_1
+
+07/05/2015  02:44 AM    <DIR>          .
+07/05/2015  02:44 AM    <DIR>          ..
+07/05/2015  02:41 AM               424 number.c
+07/05/2015  02:44 AM            49,643 number.exe
+07/05/2015  02:42 AM            18,582 number.i
+07/05/2015  02:43 AM             1,986 number.o
+07/05/2015  02:43 AM             5,482 number.s
+               5 File(s)         76,117 bytes
+               2 Dir(s)  25,551,663,104 bytes free
+			   
+C:\Practice\test_1>number.exe
+Input number: -12
+Number '-12' is NEGATIVE
+
+C:\Practice\test_1>number.exe
+Input number: 0
+Your number is ZERO
+
+C:\Practice\test_1>number.exe
+Input number: 8
+Number '8' is POSITIVE

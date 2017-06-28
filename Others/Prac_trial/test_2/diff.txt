@@ -1,0 +1,308 @@
+Comparing files infor.txt and FINFOR.TXT
+***** infor.txt
+
+number.exe:     file format pei-i386
+number.exe
+architecture: i386, flags 0x0000013a:
+***** FINFOR.TXT
+
+fnumber.exe:     file format pei-i386
+fnumber.exe
+architecture: i386, flags 0x0000013a:
+*****
+
+***** infor.txt
+
+Time/Date               Wed Jul 08 02:56:16 2015
+Magic                   010b    (PE32)
+***** FINFOR.TXT
+
+Time/Date               Wed Jul 08 02:48:05 2015
+Magic                   010b    (PE32)
+*****
+
+***** infor.txt
+Win32Version            00000000
+SizeOfImage             00027000
+SizeOfHeaders           00000600
+CheckSum                0002a13e
+Subsystem               00000003        (Windows CUI)
+***** FINFOR.TXT
+Win32Version            00000000
+SizeOfImage             0002a000
+SizeOfHeaders           00000600
+CheckSum                0002b67d
+Subsystem               00000003        (Windows CUI)
+*****
+
+***** infor.txt
+                  CONTENTS, ALLOC, LOAD, DATA
+  8 .debug_aranges 000001e0  0040e000  0040e000  00007200  2**0
+                  CONTENTS, READONLY, DEBUGGING
+***** FINFOR.TXT
+                  CONTENTS, ALLOC, LOAD, DATA
+  8 .debug_aranges 00000200  0040e000  0040e000  00007200  2**0
+                  CONTENTS, READONLY, DEBUGGING
+*****
+
+***** infor.txt
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_info   0000651d  00411000  00411000  00008200  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_abbrev 000015d1  00418000  00418000  0000e800  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 13 .debug_line   00001c4c  0041a000  0041a000  0000fe00  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 14 .debug_frame  00000ed8  0041c000  0041c000  00011c00  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 15 .debug_str    000001d8  0041d000  0041d000  00012c00  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 16 .debug_loc    00007c46  0041e000  0041e000  00012e00  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 17 .debug_ranges 00000358  00426000  00426000  0001ac00  2**0
+                  CONTENTS, READONLY, DEBUGGING
+***** FINFOR.TXT
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_info   00006724  00411000  00411000  00008200  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_abbrev 000016aa  00418000  00418000  0000ea00  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 13 .debug_line   00001d34  0041a000  0041a000  00010200  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 14 .debug_frame  00000ed8  0041c000  0041c000  00012000  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 15 .debug_str    000001d8  0041d000  0041d000  00013000  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 16 .debug_loc    00007cb6  0041e000  0041e000  00013200  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 17 .debug_macinfo 00002320  00426000  00426000  0001b000  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 18 .debug_ranges 00000358  00429000  00429000  0001d400  2**0
+                  CONTENTS, READONLY, DEBUGGING
+*****
+
+***** infor.txt
+AUX scnlen 0x20 nreloc 2 nlnno 0
+[ 31](sec 18)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x00000000 .debug_ranges
+AUX scnlen 0x18 nreloc 0 nlnno 0
+***** FINFOR.TXT
+AUX scnlen 0x20 nreloc 2 nlnno 0
+[ 31](sec 19)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x00000000 .debug_ranges
+AUX scnlen 0x18 nreloc 0 nlnno 0
+*****
+
+***** infor.txt
+[ 53](sec  2)(fl 0x00)(ty   0)(scl   3) (nx 0) 0x00000024 .jcr
+[ 54](sec -2)(fl 0x00)(ty   0)(scl 103) (nx 1) 0x00000045 number.c
+File 
+***** FINFOR.TXT
+[ 53](sec  2)(fl 0x00)(ty   0)(scl   3) (nx 0) 0x00000024 .jcr
+[ 54](sec -2)(fl 0x00)(ty   0)(scl 103) (nx 1) 0x00000051 number.c
+File 
+*****
+
+Resync Failed.  Files are too different.
+***** infor.txt
+AUX scnlen 0x56 nreloc 0 nlnno 0
+[ 67](sec  4)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x00000060 .eh_frame
+AUX scnlen 0x5c nreloc 2 nlnno 0
+[ 69](sec -2)(fl 0x00)(ty   0)(scl 103) (nx 1) 0x00000079 tlssup.c
+File 
+[ 71](sec  1)(fl 0x00)(ty  20)(scl   3) (nx 1) 0x00000434 ___dyn_tls_dtor@12
+AUX tagndx 0 ttlsiz 0x0 lnnos 0 next 0
+[ 73](sec  1)(fl 0x00)(ty  20)(scl   2) (nx 0) 0x00000468 ___dyn_tls_init@12
+[ 74](sec  7)(fl 0x00)(ty   0)(scl   3) (nx 0) 0x00000010 ___xd_a
+[ 75](sec  7)(fl 0x00)(ty   0)(scl   3) (nx 0) 0x00000014 ___xd_z
+[ 76](sec  1)(fl 0x00)(ty  20)(scl   2) (nx 0) 0x000004e8 ___tlregdtor
+[ 77](sec  1)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x00000434 .text
+AUX scnlen 0xbb nreloc 7 nlnno 0
+[ 79](sec  2)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x00000000 .data
+AUX scnlen 0x0 nreloc 0 nlnno 0
+[ 81](sec  5)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x00000020 .bss
+AUX scnlen 0x10 nreloc 0 nlnno 0
+[ 83](sec 13)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x00000242 .debug_abbrev
+AUX scnlen 0x1a4 nreloc 0 nlnno 0
+[ 85](sec 12)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x00000a63 .debug_info
+AUX scnlen 0x8f0 nreloc 41 nlnno 0
+[ 87](sec 14)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x00000133 .debug_line
+AUX scnlen 0xd2 nreloc 1 nlnno 0
+[ 89](sec  8)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x00000018 .tls$AAA
+AUX scnlen 0x1 nreloc 0 nlnno 0
+[ 91](sec  8)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x0000001c .tls$ZZZ
+AUX scnlen 0x1 nreloc 0 nlnno 0
+[ 93](sec  7)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x00000000 .CRT$XLA
+AUX scnlen 0x4 nreloc 0 nlnno 0
+[ 95](sec  7)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x0000000c .CRT$XLZ
+AUX scnlen 0x4 nreloc 0 nlnno 0
+[ 97](sec  8)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x00000000 .tls
+AUX scnlen 0x18 nreloc 4 nlnno 0
+[ 99](sec  3)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x000000bc .rdata
+AUX scnlen 0x4 nreloc 1 nlnno 0
+[101](sec  7)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x00000004 .CRT$XLC
+AUX scnlen 0x4 nreloc 1 nlnno 0
+[103](sec  7)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x00000008 .CRT$XLD
+AUX scnlen 0x4 nreloc 1 nlnno 0
+[105](sec  7)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x00000010 .CRT$XDA
+AUX scnlen 0x4 nreloc 0 nlnno 0
+[107](sec  7)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x00000014 .CRT$XDZ
+AUX scnlen 0x4 nreloc 0 nlnno 0
+[109](sec 15)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x000000c8 .debug_frame
+AUX scnlen 0x84 nreloc 6 nlnno 0
+[111](sec 17)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x000002a0 .debug_loc
+AUX scnlen 0x10a nreloc 0 nlnno 0
+[113](sec 10)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x00000066 .debug_pubnames
+AUX scnlen 0x108 nreloc 1 nlnno 0
+[115](sec 11)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x0000013b .debug_pubtypes
+AUX scnlen 0xf8 nreloc 1 nlnno 0
+[117](sec  9)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x00000020 .debug_aranges
+AUX scnlen 0x20 nreloc 2 nlnno 0
+[119](sec 16)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x00000058 .debug_str
+AUX scnlen 0x3e nreloc 0 nlnno 0
+[121](sec -2)(fl 0x00)(ty   0)(scl 103) (nx 1) 0x00000089 CRTglob.c
+File 
+[123](sec  1)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x000004f0 .text
+AUX scnlen 0x0 nreloc 0 nlnno 0
+[125](sec  2)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x00000000 .data
+AUX scnlen 0x4 nreloc 0 nlnno 0
+[127](sec  5)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x00000030 .bss
+AUX scnlen 0x0 nreloc 0 nlnno 0
+[129](sec 13)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x000003e6 .debug_abbrev
+AUX scnlen 0x30 nreloc 0 nlnno 0
+[131](sec 12)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x00001353 .debug_info
+AUX scnlen 0x76 nreloc 5 nlnno 0
+[133](sec 14)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x00000205 .debug_line
+AUX scnlen 0x33 nreloc 0 nlnno 0
+[135](sec 10)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x0000016e .debug_pubnames
+AUX scnlen 0x20 nreloc 1 nlnno 0
+[137](sec -2)(fl 0x00)(ty   0)(scl 103) (nx 1) 0x00000099 CRTfmode.c
+File 
+[139](sec  1)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x000004f0 .text
+AUX scnlen 0x0 nreloc 0 nlnno 0
+[141](sec  2)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x00000004 .data
+AUX scnlen 0x0 nreloc 0 nlnno 0
+[143](sec  5)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x00000030 .bss
+AUX scnlen 0x4 nreloc 0 nlnno 0
+[145](sec 13)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x00000416 .debug_abbrev
+AUX scnlen 0x30 nreloc 0 nlnno 0
+[147](sec 12)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x000013c9 .debug_info
+AUX scnlen 0x78 nreloc 5 nlnno 0
+[149](sec 14)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x00000238 .debug_line
+AUX scnlen 0x34 nreloc 0 nlnno 0
+[151](sec 10)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x0000018e .debug_pubnames
+AUX scnlen 0x21 nreloc 1 nlnno 0
+[153](sec -2)(fl 0x00)(ty   0)(scl 103) (nx 1) 0x000000ab txtmode.c
+File 
+[155](sec  1)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x000004f0 .text
+AUX scnlen 0x0 nreloc 0 nlnno 0
+[157](sec  2)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x00000004 .data
+AUX scnlen 0x4 nreloc 0 nlnno 0
+[159](sec  5)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x00000034 .bss
+AUX scnlen 0x0 nreloc 0 nlnno 0
+[161](sec 13)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x00000446 .debug_abbrev
+AUX scnlen 0x30 nreloc 0 nlnno 0
+[163](sec 12)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x00001441 .debug_info
+AUX scnlen 0xe0 nreloc 5 nlnno 0
+[165](sec 14)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x0000026c .debug_line
+***** FINFOR.TXT
+AUX scnlen 0x56 nreloc 0 nlnno 0
+[ 67](sec 12)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x00000a63 .debug_info
+AUX scnlen 0x207 nreloc 11 nlnno 0
+[ 69](sec 13)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x00000242 .debug_abbrev
+AUX scnlen 0xd9 nreloc 0 nlnno 0
+[ 71](sec 17)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x000002a0 .debug_loc
+AUX scnlen 0x70 nreloc 0 nlnno 0
+[ 73](sec  9)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x00000020 .debug_aranges
+AUX scnlen 0x20 nreloc 2 nlnno 0
+[ 75](sec 14)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x00000133 .debug_line
+AUX scnlen 0xe8 nreloc 1 nlnno 0
+[ 77](sec 18)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x00000000 .debug_macinfo
+AUX scnlen 0x2320 nreloc 0 nlnno 0
+[ 79](sec  4)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x00000060 .eh_frame
+AUX scnlen 0x5c nreloc 2 nlnno 0
+[ 81](sec -2)(fl 0x00)(ty   0)(scl 103) (nx 1) 0x00000085 tlssup.c
+File 
+[ 83](sec  1)(fl 0x00)(ty  20)(scl   3) (nx 1) 0x00000434 ___dyn_tls_dtor@12
+AUX tagndx 0 ttlsiz 0x0 lnnos 0 next 0
+[ 85](sec  1)(fl 0x00)(ty  20)(scl   2) (nx 0) 0x00000468 ___dyn_tls_init@12
+[ 86](sec  7)(fl 0x00)(ty   0)(scl   3) (nx 0) 0x00000010 ___xd_a
+[ 87](sec  7)(fl 0x00)(ty   0)(scl   3) (nx 0) 0x00000014 ___xd_z
+[ 88](sec  1)(fl 0x00)(ty  20)(scl   2) (nx 0) 0x000004e8 ___tlregdtor
+[ 89](sec  1)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x00000434 .text
+AUX scnlen 0xbb nreloc 7 nlnno 0
+[ 91](sec  2)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x00000000 .data
+AUX scnlen 0x0 nreloc 0 nlnno 0
+[ 93](sec  5)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x00000020 .bss
+AUX scnlen 0x10 nreloc 0 nlnno 0
+[ 95](sec 13)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x0000031b .debug_abbrev
+AUX scnlen 0x1a4 nreloc 0 nlnno 0
+[ 97](sec 12)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x00000c6a .debug_info
+AUX scnlen 0x8f0 nreloc 41 nlnno 0
+[ 99](sec 14)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x0000021b .debug_line
+AUX scnlen 0xd2 nreloc 1 nlnno 0
+[101](sec  8)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x00000018 .tls$AAA
+AUX scnlen 0x1 nreloc 0 nlnno 0
+[103](sec  8)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x0000001c .tls$ZZZ
+AUX scnlen 0x1 nreloc 0 nlnno 0
+[105](sec  7)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x00000000 .CRT$XLA
+AUX scnlen 0x4 nreloc 0 nlnno 0
+[107](sec  7)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x0000000c .CRT$XLZ
+AUX scnlen 0x4 nreloc 0 nlnno 0
+[109](sec  8)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x00000000 .tls
+AUX scnlen 0x18 nreloc 4 nlnno 0
+[111](sec  3)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x000000bc .rdata
+AUX scnlen 0x4 nreloc 1 nlnno 0
+[113](sec  7)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x00000004 .CRT$XLC
+AUX scnlen 0x4 nreloc 1 nlnno 0
+[115](sec  7)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x00000008 .CRT$XLD
+AUX scnlen 0x4 nreloc 1 nlnno 0
+[117](sec  7)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x00000010 .CRT$XDA
+AUX scnlen 0x4 nreloc 0 nlnno 0
+[119](sec  7)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x00000014 .CRT$XDZ
+AUX scnlen 0x4 nreloc 0 nlnno 0
+[121](sec 15)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x000000c8 .debug_frame
+AUX scnlen 0x84 nreloc 6 nlnno 0
+[123](sec 17)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x00000310 .debug_loc
+AUX scnlen 0x10a nreloc 0 nlnno 0
+[125](sec 10)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x00000066 .debug_pubnames
+AUX scnlen 0x108 nreloc 1 nlnno 0
+[127](sec 11)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x0000013b .debug_pubtypes
+AUX scnlen 0xf8 nreloc 1 nlnno 0
+[129](sec  9)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x00000040 .debug_aranges
+AUX scnlen 0x20 nreloc 2 nlnno 0
+[131](sec 16)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x00000058 .debug_str
+AUX scnlen 0x3e nreloc 0 nlnno 0
+[133](sec -2)(fl 0x00)(ty   0)(scl 103) (nx 1) 0x00000095 CRTglob.c
+File 
+[135](sec  1)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x000004f0 .text
+AUX scnlen 0x0 nreloc 0 nlnno 0
+[137](sec  2)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x00000000 .data
+AUX scnlen 0x4 nreloc 0 nlnno 0
+[139](sec  5)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x00000030 .bss
+AUX scnlen 0x0 nreloc 0 nlnno 0
+[141](sec 13)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x000004bf .debug_abbrev
+AUX scnlen 0x30 nreloc 0 nlnno 0
+[143](sec 12)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x0000155a .debug_info
+AUX scnlen 0x76 nreloc 5 nlnno 0
+[145](sec 14)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x000002ed .debug_line
+AUX scnlen 0x33 nreloc 0 nlnno 0
+[147](sec 10)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x0000016e .debug_pubnames
+AUX scnlen 0x20 nreloc 1 nlnno 0
+[149](sec -2)(fl 0x00)(ty   0)(scl 103) (nx 1) 0x000000a5 CRTfmode.c
+File 
+[151](sec  1)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x000004f0 .text
+AUX scnlen 0x0 nreloc 0 nlnno 0
+[153](sec  2)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x00000004 .data
+AUX scnlen 0x0 nreloc 0 nlnno 0
+[155](sec  5)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x00000030 .bss
+AUX scnlen 0x4 nreloc 0 nlnno 0
+[157](sec 13)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x000004ef .debug_abbrev
+AUX scnlen 0x30 nreloc 0 nlnno 0
+[159](sec 12)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x000015d0 .debug_info
+AUX scnlen 0x78 nreloc 5 nlnno 0
+[161](sec 14)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x00000320 .debug_line
+AUX scnlen 0x34 nreloc 0 nlnno 0
+[163](sec 10)(fl 0x00)(ty   0)(scl   3) (nx 1) 0x0000018e .debug_pubnames
+AUX scnlen 0x21 nreloc 1 nlnno 0
+[165](sec -2)(fl 0x00)(ty   0)(scl 103) (nx 1) 0x000000b7 txtmode.c
+*****
+

@@ -1,0 +1,104 @@
+Microsoft Windows XP [Version 5.1.2600]
+(C) Copyright 1985-2001 Microsoft Corp.
+
+C:\Documents and Settings\Admin>cd..
+
+C:\Documents and Settings>cd..
+
+C:\>cd Prac
+
+C:\Prac>dir
+ Volume in drive C has no label.
+ Volume Serial Number is C4DE-497E
+
+ Directory of C:\Prac
+
+07/09/2015  08:22 PM    <DIR>          .
+07/09/2015  08:22 PM    <DIR>          ..
+07/09/2015  08:24 PM             1,541 main.c
+               1 File(s)          1,541 bytes
+               2 Dir(s)  25,048,985,600 bytes free
+
+C:\Prac>gcc -std=c99 -Wall -Werror -pedantic -O0 -fprofile-arcs -ftest-coverage
+main.c -o main.exe
+
+C:\Prac>dir
+ Volume in drive C has no label.
+ Volume Serial Number is C4DE-497E
+
+ Directory of C:\Prac
+
+07/09/2015  08:25 PM    <DIR>          .
+07/09/2015  08:25 PM    <DIR>          ..
+07/09/2015  08:24 PM             1,541 main.c
+07/09/2015  08:25 PM           151,710 main.exe
+07/09/2015  08:25 PM             3,036 main.gcno
+               3 File(s)        156,287 bytes
+               2 Dir(s)  25,048,825,856 bytes free
+
+C:\Prac>main.exe
+
+C:\Prac>gcov main.c
+File 'main.c'
+Lines executed:43.75% of 32
+main.c:creating 'main.c.gcov'
+
+File 'c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/stdio.h'
+Lines executed:100.00% of 5
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/stdio.h:creating 'stdi
+o.h.gcov'
+
+
+C:\Prac>main.exe
+
+C:\Prac>gcov main.c
+File 'main.c'
+Lines executed:56.25% of 32
+main.c:creating 'main.c.gcov'
+
+File 'c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/stdio.h'
+Lines executed:100.00% of 5
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/stdio.h:creating 'stdi
+o.h.gcov'
+
+
+C:\Prac>main.exe
+
+C:\Prac>gcov main.c
+File 'main.c'
+Lines executed:56.25% of 32
+main.c:creating 'main.c.gcov'
+
+File 'c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/stdio.h'
+Lines executed:100.00% of 5
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/stdio.h:creating 'stdi
+o.h.gcov'
+
+
+C:\Prac>main.exe
+
+C:\Prac>gcov main.c
+File 'main.c'
+Lines executed:96.88% of 32
+main.c:creating 'main.c.gcov'
+
+File 'c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/stdio.h'
+Lines executed:100.00% of 5
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/stdio.h:creating 'stdi
+o.h.gcov'
+
+
+C:\Prac>main.exe
+
+C:\Prac>gcov main.c
+File 'main.c'
+Lines executed:100.00% of 32
+main.c:creating 'main.c.gcov'
+
+File 'c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/stdio.h'
+Lines executed:100.00% of 5
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/../../../../include/stdio.h:creating 'stdi
+o.h.gcov'
+
+
+C:\Prac>
